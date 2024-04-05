@@ -1,5 +1,30 @@
 * {
   font-family: "Poppins" !important;
+  color: #0c0404;
+}
+
+.light-rose {
+    background-color: #FEE715;
+}
+.primary-rose {
+    background-color: #101820;
+}
+.light-rose, .primary-rose, .light-rose p, .light-rose h1, .primary-rose p, .primary-rose h1 {
+    color: white!important;
+}
+
+.navbar {
+    background-color: #5a5a5a;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navbar div{
+    color: white;
+}
+
+.navbar .active{
+    border-bottom: 2px solid #FEE715;
 }
 
 .typewriter {
@@ -9,6 +34,18 @@
   white-space: nowrap;
   margin-right: auto;
   animation: typing 3.5s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+}
+
+.shape-1 {
+    background-color: #171717;
+    color: white;
+}
+
+.profile-img {
+    height: 600px;
+    object-fit: cover;
+    object-position: 100% -70px;
+    filter: grayscale(80%);
 }
 
 /* The typing effect */
