@@ -1,30 +1,33 @@
 * {
   font-family: "Poppins" !important;
-  color: #0c0404;
+  color: black;
 }
 
 .light-rose {
-    background-color: #FEE715;
+  background-color: #fee715;
+  color: black;
 }
 .primary-rose {
-    background-color: #101820;
+  background-color: #101820;
 }
-.light-rose, .primary-rose, .light-rose p, .light-rose h1, .primary-rose p, .primary-rose h1 {
-    color: white!important;
+.primary-rose,
+.primary-rose p,
+.primary-rose h1 {
+  color: white !important;
 }
 
 .navbar {
-    background-color: #5a5a5a;
-    z-index: 10;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #5a5a5a;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.navbar div{
-    color: white;
+.navbar div {
+  color: white;
 }
 
-.navbar .active{
-    border-bottom: 2px solid #FEE715;
+.navbar .active {
+  border-bottom: 2px solid #fee715;
 }
 
 .typewriter {
@@ -33,27 +36,87 @@
   border-right: 0.15em solid black;
   white-space: nowrap;
   margin-right: auto;
-  animation: typing 3.5s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(30, end) infinite,
+    blink-caret 0.5s step-end infinite;
 }
 
 .shape-1 {
-    background-color: #171717;
-    color: white;
+  background-color: #171717;
+  color: white;
 }
 
 .profile-img {
-    height: 600px;
-    object-fit: cover;
-    object-position: 100% -70px;
-    filter: grayscale(80%);
+  height: 600px;
+  object-fit: cover;
+  object-position: 100% -70px;
+  filter: grayscale(80%);
+}
+
+.name-profile {
+  position: absolute;
+  top: 60%;
+  left: 8%;
+}
+
+.name-profile h1 {
+  font-size: 4em;
+  color: white;
+}
+
+.name-profile h2 {
+  font-size: 3em;
+  color: white;
+}
+
+.cover-profile {
+  position: absolute;
+  top: 0;
+  height: 673.5px;
+  width: 100%;
+  background-image: linear-gradient(
+    260deg,
+    rgba(23, 23, 23, 0) 45%,
+    rgba(23, 23, 23, 1) 100%
+  );
+}
+
+.role-profile {
+  height: 50px;
+  overflow: hidden;
+  animation: role-width 8s infinite;
+}
+
+.role-profile h4 {
+  line-height: 50px;
+}
+
+.role-profile div {
+  margin-top: -50px;
+  margin-left: 38px;
+}
+
+.role-profile div h4:first-child {
+  animation: role-animation 8s infinite;
+}
+
+.footer{
+    background-color: #171717;
+    height: fit-content;
+}
+
+.footer * {
+    font-size: 12px;
+    color: white!important;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from, to {
+  from,
+  to {
     width: 0;
   }
-  40%, 60% {
+  40%,
+  60% {
     width: 100%;
   }
 }
@@ -66,5 +129,71 @@
   }
   50% {
     border-color: black;
+  }
+}
+
+@keyframes role-animation {
+  0% {
+    margin-top: -50px;
+  }
+  10% {
+    margin-top: -50px;
+  }
+  20% {
+    margin-top: -100px;
+  }
+  30% {
+    margin-top: -100px;
+  }
+  40% {
+    margin-top: -150px;
+  }
+  60% {
+    margin-top: -150px;
+  }
+  70% {
+    margin-top: -100px;
+  }
+  80% {
+    margin-top: -100px;
+  }
+  90% {
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: -50px;
+  }
+}
+
+@keyframes role-width {
+  0% {
+    width: 300px;
+  }
+  10% {
+    width: 300px;
+  }
+  20% {
+    width: 300px;
+  }
+  30% {
+    width: 300px;
+  }
+  40% {
+    width: 365px;
+  }
+  60% {
+    width: 365px;
+  }
+  70% {
+    width: 300px;
+  }
+  80% {
+    width: 300px;
+  }
+  90% {
+    width: 300px;
+  }
+  100% {
+    width: 300px;
   }
 }
