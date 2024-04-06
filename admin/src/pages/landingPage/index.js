@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Card, Col, Container, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import { landingTab } from "../../actions/landing";
 import Dashboard from "../dashboard";
-import Model from "./components/model";
+//import Model from "./components/model";
 import Home from "../home";
 
 const LandingPage = () => {
   const tab = useSelector((state) => state.landingTab);
   const dispatch = useDispatch();
-
-  const [collapsed, setdivd] = useState(true);
-  const toggleNavbar = () => setdivd(!collapsed);
 
   useEffect(() => {
     dispatch(landingTab("main"));
@@ -35,7 +32,7 @@ const LandingPage = () => {
             <div className="poppins-semibold">Contact</div>
           </div>
         </div>
-        <img className="w-100 profile-img" src="/image/profile-1.jpg"></img>
+        <img className="w-100 profile-img" src="/image/profile-1.jpg" alt="profile"></img>
         <div className="cover-profile"></div>
       </Col>
       <Col xs="12">

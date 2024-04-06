@@ -56,7 +56,7 @@ const Home = () => {
         <Row>
             <Col>
             <Card className="p-2 project-card">
-                <img className="project-img" src={`/image/mayar-${project}.png`} alt="image"/>
+                <img className="project-img" src={`/image/mayar-${project}.png`} alt="projects"/>
             </Card>
             </Col>
         </Row>
