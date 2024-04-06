@@ -27,7 +27,7 @@ const LandingPage = () => {
         <div faded className="navbar px-3 py-4 w-100">
           <div
             className="d-flex justify-content-around mx-auto"
-            style={{ width: "70%" }}
+            style={{ width: "80%" }}
           >
             <div className="active poppins-semibold">Home</div>
             <div className="poppins-semibold">About</div>
@@ -57,9 +57,10 @@ const LandingPage = () => {
       <Col xs="12" className="p-0">
         {tab === "main" && <Home />}
         {tab === "table" && <Dashboard />}
-        <div
-          className="footer p-4 mt-5"
+        <Row
+          className="footer p-4 mt-5 mx-0"
         >
+          <Col style={{borderRight: "2px solid white"}}>
           <h5>Contact:</h5>
           <h5 className="d-flex">
             <i className="bi bi-envelope me-2"></i>
@@ -69,7 +70,14 @@ const LandingPage = () => {
             <i className="bi bi-phone-fill me-2"></i>
             +62 812 6162 2942
           </h5>
-        </div>
+          </Col>
+          <Col className="icon w-100 d-flex justify-content-around">
+            <i className="bi bi-linkedin"></i>
+            <i className="bi bi-github"></i>
+            <i className="bi bi-gitlab"></i>
+            <i class="bi bi-whatsapp"></i>
+          </Col>
+        </Row>
       </Col>
     </Row>
   );

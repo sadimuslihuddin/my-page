@@ -32,10 +32,12 @@ const Home = () => {
   return (
     <Container className="pt-5">
       <div>
-        <h1 className="poppins-bold text-glitch">Hello, Sa'di is here</h1>
-        <p>
-          I'm Fullstack Developer based in Bandung, and i'm very passionate and
-          dedicate to my work.
+        <h1 className="poppins-bold text-glitch">Who am i?</h1>
+        <p className="text-justify">
+          I'm a Fullstack Developer based in Bandung, and i'm very passionate and
+          dedicate to my work. I thrive on solving complex challenges and constantly seek to expand my skills and knowledge. 
+          With a focus on collaboration and continuous improvement, I bring adaptability and creativity to every project I undertake. 
+          My goal is to deliver innovative solutions that make a meaningful impact in the digital world.
         </p>
       </div>
       <Button className="mb-5 light-rose">
@@ -45,11 +47,12 @@ const Home = () => {
       <Card className="p-4 light-rose">
         <h1 className="poppins-semibold text-glitch">Education</h1>
         <p>
-            Undergraduate Student From Bandung Institute of Technology.
+            A diligent and aspiring undergraduate student majoring in Mathematics hailing from the esteemed Bandung Institute of Technology (Institut Teknologi Bandung, ITB), 
+            a prestigious educational institution renowned for its academic excellence and innovative research.
         </p>
       </Card>
       <div className="mt-5">
-        <h1 className="poppins-semibold text-glitch">Projects</h1>
+        <h1 className="poppins-semibold text-glitch">Projects & Works</h1>
         <Row>
             <Col>
             <Card className="p-2 project-card">
