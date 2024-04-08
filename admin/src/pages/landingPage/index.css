@@ -149,6 +149,17 @@
   .name-profile h4 {
     font-size: 1.25em;
   }
+  @keyframes role-width {
+    0%,
+    30%,
+    70%,
+    100% {
+      width: 270px;
+    }
+    40%, 60% {
+      width: 320px;
+    }
+  }
 }
 
 /* The typing effect */
@@ -198,12 +209,9 @@
   30%,
   70%,
   100% {
-    width: 270px;
+    width: 300px;
   }
-  40% {
-    width: 320px;
-  }
-  60% {
-    width: 320px;
+  40%, 60% {
+    width: 365px;
   }
 }

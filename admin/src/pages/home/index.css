@@ -1,15 +1,8 @@
-.project-card {
-    height: 300px;
-    overflow-y: scroll;
+.project-list {
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
-.project-img {
-    height: auto;
-    object-fit: cover;
-    object-position: 0 0;
-    animation: fadeIn 4s infinite;
+.project-btn {
+    width: fit-content;
 }
-
-@keyframes fadeIn {
-    0%, 100% { opacity: 0; }
-    40%, 60% { opacity: 1; }
-  }

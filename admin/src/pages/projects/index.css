@@ -1,0 +1,15 @@
+.project-card {
+    height: 300px;
+    overflow-y: scroll;
+}
+.project-img {
+    height: auto;
+    object-fit: cover;
+    object-position: 0 0;
+    animation: fadeIn 4s infinite;
+}
+
+@keyframes fadeIn {
+    0%, 100% { opacity: 0; }
+    40%, 60% { opacity: 1; }
+  }
