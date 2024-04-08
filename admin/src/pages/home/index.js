@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <Container className="pt-5">
-      <div>
+      <div className="mb-5">
         <h1 className="poppins-bold text-glitch">Who am i?</h1>
         <p className="text-justify">
           I'm a Fullstack Developer based in Bandung, and i'm very passionate
