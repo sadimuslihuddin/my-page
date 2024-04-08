@@ -107,18 +107,48 @@
   text-align: justify;
 }
 
-.footer{
-    background-color: #171717;
-    height: fit-content;
+.footer {
+  background-color: #171717;
+  height: fit-content;
 }
 
 .footer * {
-    font-size: 12px;
-    color: white!important;
+  font-size: 12px;
+  color: white !important;
 }
 
 .footer .icon i {
   font-size: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar * {
+    font-size: 0.75em;
+  }
+  .shape-1 {
+    display: none !important;
+  }
+  .profile-img {
+    height: 400px;
+    filter: brightness(50%);
+  }
+  .cover-profile {
+    display: none;
+  }
+  .name-profile {
+    position: relative;
+    margin-top: -225px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  .name-profile h1,
+  .name-profile h2 {
+    font-size: 2em;
+  }
+  .name-profile h4 {
+    font-size: 1.25em;
+  }
 }
 
 /* The typing effect */
@@ -145,67 +175,35 @@
 }
 
 @keyframes role-animation {
-  0% {
+  0%,
+  10%,
+  90%,
+  100% {
     margin-top: -50px;
   }
-  10% {
-    margin-top: -50px;
-  }
-  20% {
-    margin-top: -100px;
-  }
-  30% {
-    margin-top: -100px;
-  }
-  40% {
-    margin-top: -150px;
-  }
-  60% {
-    margin-top: -150px;
-  }
-  70% {
-    margin-top: -100px;
-  }
+  20%,
+  30%,
+  70%,
   80% {
     margin-top: -100px;
   }
-  90% {
-    margin-top: -50px;
-  }
-  100% {
-    margin-top: -50px;
+  40%,
+  60% {
+    margin-top: -150px;
   }
 }
 
 @keyframes role-width {
-  0% {
-    width: 300px;
-  }
-  10% {
-    width: 300px;
-  }
-  20% {
-    width: 300px;
-  }
-  30% {
-    width: 300px;
+  0%,
+  30%,
+  70%,
+  100% {
+    width: 270px;
   }
   40% {
-    width: 365px;
+    width: 320px;
   }
   60% {
-    width: 365px;
-  }
-  70% {
-    width: 300px;
-  }
-  80% {
-    width: 300px;
-  }
-  90% {
-    width: 300px;
-  }
-  100% {
-    width: 300px;
+    width: 320px;
   }
 }

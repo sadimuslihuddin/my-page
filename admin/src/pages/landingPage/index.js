@@ -20,7 +20,7 @@ const LandingPage = () => {
       <Col xs="4" className="shape-1 p-0">
         <h1 className="poppins-bold text-center mt-4">Portofolio</h1>
       </Col>
-      <Col xs="8" className="p-0">
+      <Col xs="12" sm="8" className="p-0">
         <div faded className="navbar px-3 py-4 w-100">
           <div
             className="d-flex justify-content-around mx-auto"
@@ -32,7 +32,11 @@ const LandingPage = () => {
             <div className="poppins-semibold">Contact</div>
           </div>
         </div>
-        <img className="w-100 profile-img" src="/image/profile-1.jpg" alt="profile"></img>
+        <img
+          className="w-100 profile-img"
+          src="/image/profile-1.jpg"
+          alt="profile"
+        ></img>
         <div className="cover-profile"></div>
       </Col>
       <Col xs="12">
@@ -46,7 +50,7 @@ const LandingPage = () => {
             <div>
               <h4 className="poppins-bold px-3 mb-0">A WEB DEVELOPER</h4>
               <h4 className="poppins-bold px-3 mb-0">A MATH MODELLER</h4>
-			  <h4 className="poppins-bold px-3 mb-0">AN ANDROID DEVELOPER</h4>
+              <h4 className="poppins-bold px-3 mb-0">AN ANDROID DEVELOPER</h4>
             </div>
           </div>
         </div>
@@ -54,19 +58,17 @@ const LandingPage = () => {
       <Col xs="12" className="p-0">
         {tab === "main" && <Home />}
         {tab === "table" && <Dashboard />}
-        <Row
-          className="footer p-4 mt-5 mx-0"
-        >
-          <Col style={{borderRight: "2px solid white"}}>
-          <h5>Contact:</h5>
-          <h5 className="d-flex">
-            <i className="bi bi-envelope me-2"></i>
-            muslihuddinsadi@gmail.com
-          </h5>
-          <h5 className="d-flex">
-            <i className="bi bi-phone-fill me-2"></i>
-            +62 812 6162 2942
-          </h5>
+        <Row className="footer p-4 mt-5 mx-0">
+          <Col style={{ borderRight: "2px solid white" }}>
+            <h5>Contact:</h5>
+            <h5 className="d-flex">
+              <i className="bi bi-envelope me-2"></i>
+              muslihuddinsadi@gmail.com
+            </h5>
+            <h5 className="d-flex">
+              <i className="bi bi-phone-fill me-2"></i>
+              +62 812 6162 2942
+            </h5>
           </Col>
           <Col className="icon w-100 d-flex justify-content-around">
             <i className="bi bi-linkedin"></i>
