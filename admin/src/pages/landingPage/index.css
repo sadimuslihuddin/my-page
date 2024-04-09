@@ -1,0 +1,217 @@
+* {
+  font-family: "Poppins" !important;
+  color: black;
+}
+
+.light-rose {
+  background-color: #fee715;
+  color: black;
+}
+.primary-rose {
+  background-color: #101820;
+}
+.primary-rose,
+.primary-rose p,
+.primary-rose h1 {
+  color: white !important;
+}
+
+.navbar {
+  background-color: #5a5a5a;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.navbar div {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+  color: white;
+}
+
+.navbar .active {
+  border-bottom: 2px solid #fee715;
+}
+
+.typewriter {
+  width: fit-content;
+  overflow: hidden;
+  border-right: 0.15em solid black;
+  white-space: nowrap;
+  margin-right: auto;
+  animation: typing 3.5s steps(30, end) infinite,
+    blink-caret 0.5s step-end infinite;
+}
+
+.shape-1 {
+  background-color: #171717;
+  color: white;
+}
+
+.profile-img {
+  height: calc(120vh - 80px);
+  object-fit: cover;
+  object-position: 100% -70px;
+  filter: grayscale(80%);
+}
+
+.name-profile {
+  position: absolute;
+  top: 55%;
+  left: 8%;
+}
+
+.name-profile h1 {
+  font-size: 4em;
+  color: white;
+}
+
+.name-profile h2 {
+  font-size: 3em;
+  color: white;
+}
+
+.cover-profile {
+  position: absolute;
+  top: 0px;
+  height: 120vh;
+  width: 100%;
+  background-image: linear-gradient(
+    260deg,
+    rgba(23, 23, 23, 0) 45%,
+    rgba(23, 23, 23, 1) 100%
+  );
+}
+
+.role-profile {
+  height: 50px;
+  overflow: hidden;
+  animation: role-width 8s infinite;
+}
+
+.role-profile h4 {
+  line-height: 50px;
+}
+
+.role-profile div {
+  margin-top: -50px;
+  margin-left: 38px;
+}
+
+.role-profile div h4:first-child {
+  animation: role-animation 8s infinite;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.footer {
+  background-color: #171717;
+  height: fit-content;
+}
+
+.footer * {
+  font-size: 12px;
+  color: white !important;
+}
+
+.footer .icon i {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar * {
+    font-size: 0.75em;
+  }
+  .shape-1 {
+    display: none !important;
+  }
+  .profile-img {
+    height: 400px;
+    filter: brightness(50%);
+  }
+  .cover-profile {
+    display: none;
+  }
+  .name-profile {
+    position: relative;
+    margin-top: -225px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  .name-profile h1,
+  .name-profile h2 {
+    font-size: 2em;
+  }
+  .name-profile h4 {
+    font-size: 1.25em;
+  }
+  @keyframes role-width {
+    0%,
+    30%,
+    70%,
+    100% {
+      width: 270px;
+    }
+    40%, 60% {
+      width: 320px;
+    }
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from,
+  to {
+    width: 0;
+  }
+  40%,
+  60% {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes role-animation {
+  0%,
+  10%,
+  90%,
+  100% {
+    margin-top: -50px;
+  }
+  20%,
+  30%,
+  70%,
+  80% {
+    margin-top: -100px;
+  }
+  40%,
+  60% {
+    margin-top: -150px;
+  }
+}
+
+@keyframes role-width {
+  0%,
+  30%,
+  70%,
+  100% {
+    width: 300px;
+  }
+  40%, 60% {
+    width: 365px;
+  }
+}
