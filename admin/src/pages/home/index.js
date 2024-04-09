@@ -2,6 +2,7 @@ import baffle from "baffle";
 import React, { useEffect } from "react";
 import { Button, Card, Col, Container, Row } from "reactstrap";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   //glitch effect
@@ -30,12 +31,15 @@ const Home = () => {
         </p>
       </div>
       <Card className="p-4 light-rose">
-        <h1 className="poppins-semibold text-glitch">Education</h1>
+        <div className="d-flex">
+          <h1 className="poppins-semibold text-glitch">Education</h1>
+          <img width={45} height={45} src="/image/itb.png" className="ms-3" />
+        </div>
         <p>
-          A diligent and aspiring undergraduate student majoring in Mathematics
-          hailing from the esteemed Bandung Institute of Technology (Institut
-          Teknologi Bandung, ITB), a prestigious educational institution
-          renowned for its academic excellence and innovative research.
+          An undergraduate student majoring in Mathematics hailing from the
+          esteemed Bandung Institute of Technology (Institut Teknologi Bandung,
+          ITB), a prestigious educational institution renowned for its academic
+          excellence and innovative research.
         </p>
       </Card>
       <div className="mt-5">
@@ -52,10 +56,12 @@ const Home = () => {
                 No-code payment, commerce and spend management platform for
                 growing business.
               </p>
-              <Button className="light-rose project-btn align-self-end">
-                See more
-                <i className="bi bi-chevron-right ms-1"></i>
-              </Button>
+              <Link to="/project/mayar" className="text-end">
+                <Button className="light-rose project-btn">
+                  See more
+                  <i className="bi bi-chevron-right ms-1"></i>
+                </Button>
+              </Link>
             </Card>
           </Col>
           <Col xs="12" sm="6" className="mt-3">
@@ -68,10 +74,12 @@ const Home = () => {
                 Platform bagi mahasiswa TPB ITB agar mereka dapat mengambis di
                 tahun pertama.
               </p>
-              <Button className="light-rose project-btn align-self-end">
-                See more
-                <i className="bi bi-chevron-right ms-1"></i>
-              </Button>
+              <Link to="/project/gamifylearn" className="text-end">
+                <Button className="light-rose project-btn">
+                  See more
+                  <i className="bi bi-chevron-right ms-1"></i>
+                </Button>
+              </Link>
             </Card>
           </Col>
         </Row>
@@ -98,7 +106,12 @@ const Home = () => {
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/react.svg" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/react.svg"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">ReactJS</span>
             </div>
@@ -116,61 +129,111 @@ const Home = () => {
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/c-sharp.png" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/c-sharp.png"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">C#</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/tailwind.svg" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/tailwind.svg"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Tailwind CSS</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/bootstrap.svg" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/bootstrap.svg"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Bootstrap CSS</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/graphql.png" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/graphql.png"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Graphql</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/python.png" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/python.png"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Python</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/django.png" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/django.png"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Django</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/matlab.png" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/matlab.png"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Matlab</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/mysql.svg" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/mysql.svg"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Mysql</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/rstudio.png" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/rstudio.png"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">RStudio</span>
             </div>
           </Col>
           <Col xs={3} className="skill-list d-flex">
-            <img className="m-2" width={40} height={40} src="/image/wordpress.png" />
+            <img
+              className="m-2"
+              width={40}
+              height={40}
+              src="/image/wordpress.png"
+            />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Wordpress</span>
             </div>

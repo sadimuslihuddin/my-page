@@ -29,7 +29,7 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<LandingPage/>}/>
           <Route index element={<LandingPage/>}></Route>
-          <Route path="projects" element={<Projects/>}></Route>
+          <Route path="project/:title" element={<Projects/>}></Route>
         </Routes>
         </BrowserRouter>
       </Provider>

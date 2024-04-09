@@ -32,7 +32,7 @@ const LandingPage = () => {
             </div>
             <div className="poppins-semibold navbar-list">About</div>
             <div className="poppins-semibold navbar-list">
-              <Link to="/projects">Project & Works</Link>
+              Project & Works
             </div>
             <div className="poppins-semibold navbar-list">Contact</div>
           </div>
