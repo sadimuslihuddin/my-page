@@ -27,10 +27,15 @@
   padding-right: 0.4rem;
   padding-bottom: 0.1rem;
   padding-top: 0.1rem;
-  color: white;
 }
 
-.navbar .active {
+.navbar * {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .active, .navbar .navbar-list:hover {
+  cursor: pointer;
   border-bottom: 2px solid #fee715;
 }
 

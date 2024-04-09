@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
-import { Container } from "reactstrap";
+import { Container, Card, Row, Col } from "reactstrap";
 
 const Projects = () => {
   const [project, setProject] = useState(1);

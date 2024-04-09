@@ -6,6 +6,7 @@ import { landingTab } from "../../actions/landing";
 import Dashboard from "../dashboard";
 //import Model from "./components/model";
 import Home from "../home";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   const tab = useSelector((state) => state.landingTab);
@@ -26,10 +27,14 @@ const LandingPage = () => {
             className="d-flex justify-content-around mx-auto"
             style={{ width: "80%" }}
           >
-            <div className="active poppins-semibold">Home</div>
-            <div className="poppins-semibold">About</div>
-            <div className="poppins-semibold">Project & Works</div>
-            <div className="poppins-semibold">Contact</div>
+            <div className="active poppins-semibold navbar-list">
+              <Link to="/">Home</Link>
+            </div>
+            <div className="poppins-semibold navbar-list">About</div>
+            <div className="poppins-semibold navbar-list">
+              <Link to="/projects">Project & Works</Link>
+            </div>
+            <div className="poppins-semibold navbar-list">Contact</div>
           </div>
         </div>
         <img
