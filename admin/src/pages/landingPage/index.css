@@ -27,6 +27,8 @@
   padding-right: 0.4rem;
   padding-bottom: 0.1rem;
   padding-top: 0.1rem;
+  border-top: 2px solid #5a5a5a;
+  border-bottom: 2px solid #5a5a5a;
 }
 
 .navbar * {
@@ -55,7 +57,7 @@
 }
 
 .profile-img {
-  height: calc(120vh - 80px);
+  height: calc(66vw - 80px);
   object-fit: cover;
   object-position: 100% -70px;
   filter: grayscale(80%);
@@ -79,8 +81,8 @@
 
 .cover-profile {
   position: absolute;
-  top: 0px;
-  height: 120vh;
+  top: 4px;
+  height: 66vw;
   width: 66.66666664%;
   background-image: linear-gradient(
     260deg,

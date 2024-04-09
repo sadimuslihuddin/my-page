@@ -27,7 +27,7 @@ const LandingPage = () => {
             className="d-flex justify-content-around mx-auto"
             style={{ width: "80%" }}
           >
-            <div className="active poppins-semibold navbar-list">
+            <div className="poppins-semibold navbar-list">
               <Link to="/">Home</Link>
             </div>
             <div className="poppins-semibold navbar-list">About</div>
