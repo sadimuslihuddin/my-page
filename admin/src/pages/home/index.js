@@ -46,10 +46,7 @@ const Home = () => {
           <Col xs="12" sm="6" className="mt-3">
             <Card className="p-3">
               <div className="project-list">
-                <img
-                  height={50}
-                  src="/image/mayar-logo.webp"
-                />
+                <img height={50} src="/image/mayar-logo.webp" />
               </div>
               <p className="fs-6">
                 No-code payment, commerce and spend management platform for
@@ -64,20 +61,119 @@ const Home = () => {
           <Col xs="12" sm="6" className="mt-3">
             <Card className="p-3">
               <div className="project-list">
-                <img
-                  height={30}
-                  src="/image/gamifylearn-logo.svg"
-                />
+                <img height={30} src="/image/gamifylearn-logo.svg" />
               </div>
               <p className="fs-6">
-              Sebuah sistem yang dirancang khusus sebagai One Stop Learning Platform bagi mahasiswa 
-              TPB ITB agar mereka dapat mengambis di tahun pertama.
+                Sebuah sistem yang dirancang khusus sebagai One Stop Learning
+                Platform bagi mahasiswa TPB ITB agar mereka dapat mengambis di
+                tahun pertama.
               </p>
               <Button className="light-rose project-btn align-self-end">
                 See more
                 <i className="bi bi-chevron-right ms-1"></i>
               </Button>
             </Card>
+          </Col>
+        </Row>
+      </div>
+      <div className="mt-5 text-center">
+        <h1 className="poppins-semibold text-glitch mb-4">Skillset</h1>
+        <Row>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/html.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">HTML5</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/css.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">CSS</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/js.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">JavaScript</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/react.svg" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">ReactJS</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/vue.svg" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">VueJS</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/git.svg" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Git</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/c-sharp.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">C#</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/tailwind.svg" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Tailwind CSS</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/bootstrap.svg" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Bootstrap CSS</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/graphql.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Graphql</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/python.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Python</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/django.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Django</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/matlab.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Matlab</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/mysql.svg" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Mysql</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/rstudio.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">RStudio</span>
+            </div>
+          </Col>
+          <Col xs={3} className="skill-list d-flex">
+            <img className="m-2" width={40} height={40} src="/image/wordpress.png" />
+            <div className="skill-text my-auto">
+              <span className="poppins-semibold">Wordpress</span>
+            </div>
           </Col>
         </Row>
       </div>

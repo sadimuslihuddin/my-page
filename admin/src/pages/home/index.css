@@ -1,8 +1,40 @@
 .project-list {
-    height: 60px;
-    display: flex;
-    align-items: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 .project-btn {
-    width: fit-content;
+  width: fit-content;
 }
+.skill-list {
+    justify-content: center;
+}
+.skill-text {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+}
+.skill-list:hover .skill-text {
+    animation: 0.5s slide-width-right forwards;
+}
+.skill-list:hover .skill-text span {
+  animation: 0.5s slide-right forwards;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes slide-width-right {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 100%;
+    }
+  }
