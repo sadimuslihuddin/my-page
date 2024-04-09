@@ -31,9 +31,7 @@ const LandingPage = () => {
               <Link to="/">Home</Link>
             </div>
             <div className="poppins-semibold navbar-list">About</div>
-            <div className="poppins-semibold navbar-list">
-              Project & Works
-            </div>
+            <div className="poppins-semibold navbar-list">Project & Works</div>
             <div className="poppins-semibold navbar-list">Contact</div>
           </div>
         </div>
@@ -76,10 +74,18 @@ const LandingPage = () => {
             </h5>
           </Col>
           <Col className="icon w-100 d-flex justify-content-around">
-            <i className="bi bi-linkedin"></i>
-            <i className="bi bi-github"></i>
-            <i className="bi bi-gitlab"></i>
-            <i class="bi bi-whatsapp"></i>
+            <a href="https://id.linkedin.com/in/muslihuddinsadisubhan">
+              <i className="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/sadimuslihuddin">
+              <i className="bi bi-github"></i>
+            </a>
+            <a href="https://gitlab.com/sadimuslihuddin">
+              <i className="bi bi-gitlab"></i>
+            </a>
+            <a href="https://wa.me/+6281261622942">
+              <i class="bi bi-whatsapp"></i>
+            </a>
           </Col>
         </Row>
       </Col>
