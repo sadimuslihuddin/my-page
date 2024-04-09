@@ -149,16 +149,8 @@
   .name-profile h4 {
     font-size: 1.25em;
   }
-  @keyframes role-width {
-    0%,
-    30%,
-    70%,
-    100% {
-      width: 270px;
-    }
-    40%, 60% {
-      width: 320px;
-    }
+  .role-profile {
+    animation: role-width-small 8s infinite;
   }
 }
 
@@ -213,5 +205,17 @@
   }
   40%, 60% {
     width: 365px;
+  }
+}
+
+@keyframes role-width-small {
+  0%,
+  30%,
+  70%,
+  100% {
+    width: 270px;
+  }
+  40%, 60% {
+    width: 320px;
   }
 }
