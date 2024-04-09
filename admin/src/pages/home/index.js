@@ -57,8 +57,8 @@ const Home = () => {
                 growing business.
               </p>
               <Link to="/project/mayar" className="text-end">
-                <Button className="light-rose project-btn">
-                  See more
+                <Button className="light-rose project-btn button">
+                  <span>See more</span>
                   <i className="bi bi-chevron-right ms-1"></i>
                 </Button>
               </Link>
@@ -75,8 +75,8 @@ const Home = () => {
                 tahun pertama.
               </p>
               <Link to="/project/gamifylearn" className="text-end">
-                <Button className="light-rose project-btn">
-                  See more
+                <Button className="light-rose project-btn button">
+                  <span>See more</span>
                   <i className="bi bi-chevron-right ms-1"></i>
                 </Button>
               </Link>
