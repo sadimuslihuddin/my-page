@@ -7,8 +7,8 @@
   color: white;
 }
 
-.btn-link:focus {
-  color: #fee715;
+.btn-link:active, .btn-link:focus-visible {
+  color: #fee715!important;
 }
 
 .light-rose {
