@@ -71,25 +71,25 @@ const Home = ({ about, projects }) => {
       <div className="mt-5 text-center">
         <h1 className="poppins-semibold text-glitch mb-4">Skillset</h1>
         <Row>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img className="m-2" width={40} height={40} src="/image/html.png" />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">HTML5</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img className="m-2" width={40} height={40} src="/image/css.png" />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">CSS</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img className="m-2" width={40} height={40} src="/image/js.png" />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">JavaScript</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -100,19 +100,19 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">ReactJS</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img className="m-2" width={40} height={40} src="/image/vue.svg" />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">VueJS</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img className="m-2" width={40} height={40} src="/image/git.svg" />
             <div className="skill-text my-auto">
               <span className="poppins-semibold">Git</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -123,7 +123,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">C#</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -134,7 +134,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">Tailwind CSS</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -145,7 +145,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">Bootstrap CSS</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -156,7 +156,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">Graphql</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -167,7 +167,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">Python</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -178,7 +178,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">Django</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -189,7 +189,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">Matlab</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -200,7 +200,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">Mysql</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
@@ -211,7 +211,7 @@ const Home = ({ about, projects }) => {
               <span className="poppins-semibold">RStudio</span>
             </div>
           </Col>
-          <Col xs={3} className="skill-list d-flex">
+          <Col xs={4} sm={3} className="skill-list d-flex">
             <img
               className="m-2"
               width={40}
