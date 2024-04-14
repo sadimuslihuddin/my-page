@@ -56,6 +56,26 @@
 .skill-list:hover .skill-text span {
   animation: 0.5s slide-right forwards;
 }
+.itb {
+  overflow: hidden;
+}
+.itb h1, .itb p{
+  z-index: 1;
+}
+.itb img{
+  position: absolute;
+  height: 500px;
+  z-index: 0;
+  right: -10%;
+  top: -75%;
+}
+
+@media screen and (max-width: 576px) {
+  .itb img{
+    right: calc(40% - 400px);
+    top: -40%;
+  }
+}
 
 @keyframes slide-right {
   from {

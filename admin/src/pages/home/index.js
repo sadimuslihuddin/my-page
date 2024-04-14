@@ -31,10 +31,10 @@ const Home = ({ about, projects }) => {
           world.
         </p>
       </div>
-      <Card className="p-4 light-rose">
+      <Card className="p-4 light-rose itb">
         <div className="d-flex align-content-center">
           <h1 className="poppins-semibold text-glitch my-auto">Education</h1>
-          <img width={45} height={45} src="/image/itb.png" className="ms-3 my-auto" />
+          <img src="/image/itb.png" className="ms-3 my-auto" />
         </div>
         <p>
           An undergraduate student majoring in Mathematics hailing from the
