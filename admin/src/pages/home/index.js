@@ -5,7 +5,7 @@ import "./index.css";
 import { Link } from "react-router-dom";
 import { dataProjects } from "../../utils/data";
 
-const Home = () => {
+const Home = ({ about, projects }) => {
   //glitch effect
   useEffect(() => {
     const text = baffle(document.querySelectorAll(".text-glitch"));
@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <Container className="pt-5">
-      <div className="mb-5">
+      <div ref={about} className="mb-5">
         <h1 className="poppins-bold text-glitch">Who am i?</h1>
         <p className="text-justify">
           I'm a Fullstack Developer based in Bandung, and i'm very passionate
@@ -44,7 +44,7 @@ const Home = () => {
         </p>
       </Card>
       <div className="mt-5">
-        <h1 className="poppins-semibold text-glitch text-center">
+        <h1 ref={projects} className="poppins-semibold text-glitch text-center">
           Projects & Works
         </h1>
         <Row>
@@ -228,4 +228,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default React.forwardRef(Home);
