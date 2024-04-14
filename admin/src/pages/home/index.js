@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Button, Card, Col, Container, Row } from "reactstrap";
 import "./index.css";
 import { Link } from "react-router-dom";
+import { dataProjects } from "../../utils/data";
 
 const Home = () => {
   //glitch effect
@@ -31,7 +32,7 @@ const Home = () => {
         </p>
       </div>
       <Card className="p-4 light-rose">
-        <div className="d-flex">
+        <div className="d-flex align-content-center">
           <h1 className="poppins-semibold text-glitch">Education</h1>
           <img width={45} height={45} src="/image/itb.png" className="ms-3" />
         </div>
@@ -47,41 +48,24 @@ const Home = () => {
           Projects & Works
         </h1>
         <Row>
-          <Col xs="12" sm="6" className="mt-3">
-            <Card className="p-3">
-              <div className="project-list">
-                <img height={50} src="/image/mayar-logo.webp" />
-              </div>
-              <p className="fs-6">
-                No-code payment, commerce and spend management platform for
-                growing business.
-              </p>
-              <Link to="/project/mayar" className="text-end">
-                <Button className="light-rose project-btn button">
-                  <span>See more</span>
-                  <i className="bi bi-chevron-right ms-1"></i>
-                </Button>
-              </Link>
-            </Card>
-          </Col>
-          <Col xs="12" sm="6" className="mt-3">
-            <Card className="p-3">
-              <div className="project-list">
-                <img height={30} src="/image/gamifylearn-logo.svg" />
-              </div>
-              <p className="fs-6">
-                Sebuah sistem yang dirancang khusus sebagai One Stop Learning
-                Platform bagi mahasiswa TPB ITB agar mereka dapat mengambis di
-                tahun pertama.
-              </p>
-              <Link to="/project/gamifylearn" className="text-end">
-                <Button className="light-rose project-btn button">
-                  <span>See more</span>
-                  <i className="bi bi-chevron-right ms-1"></i>
-                </Button>
-              </Link>
-            </Card>
-          </Col>
+          {dataProjects.map((proj) => {
+            return (
+              <Col xs="12" sm="6" className="mt-3">
+                <Card className="p-3">
+                  <div className="project-list">
+                    <img height={proj.coverHeight} src={proj.cover} />
+                  </div>
+                  <p className="fs-6">{proj.description}</p>
+                  <Link to={`/project/${proj.title}`} className="text-end">
+                    <Button className="light-rose project-btn button">
+                      <span>See more</span>
+                      <i className="bi bi-chevron-right ms-1"></i>
+                    </Button>
+                  </Link>
+                </Card>
+              </Col>
+            );
+          })}
         </Row>
       </div>
       <div className="mt-5 text-center">

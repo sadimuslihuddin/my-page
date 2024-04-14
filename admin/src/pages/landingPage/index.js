@@ -22,10 +22,9 @@ const LandingPage = () => {
         <h1 className="poppins-bold text-center mt-4">Portofolio</h1>
       </Col>
       <Col xs="12" sm="8" className="p-0">
-        <div faded className="navbar px-3 py-4 w-100">
+        <div faded className="navbar px-3 py-2 py-sm-4 w-100">
           <div
-            className="d-flex justify-content-around mx-auto"
-            style={{ width: "80%" }}
+            className="d-flex justify-content-around mx-auto w-100"
           >
             <div className="poppins-semibold navbar-list">
               <Link to="/">Home</Link>

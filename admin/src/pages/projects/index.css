@@ -1,12 +1,28 @@
 .project-card {
-    height: 300px;
+    height: 400px;
     overflow-y: scroll;
+    margin-bottom: 100px;
 }
 .project-img {
     height: auto;
     object-fit: cover;
     object-position: 0 0;
     animation: fadeIn 4s infinite;
+}
+.back {
+    width: fit-content;
+    text-decoration: none;
+}
+.back i, .back h2{
+    font-size: 2em;
+    height: fit-content;
+    color: #5a5a5a;
+}
+.back:hover i, .back:hover h2{
+    color: #171717;
+}
+.date {
+    color: #0d6efd;
 }
 
 @keyframes fadeIn {

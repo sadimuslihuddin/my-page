@@ -129,8 +129,11 @@
 }
 
 @media screen and (max-width: 576px) {
+  .navbar {
+    position: fixed;
+  }
   .navbar * {
-    font-size: 0.75em;
+    font-size: 8px;
   }
   .shape-1 {
     display: none !important;
@@ -138,6 +141,7 @@
   .profile-img {
     height: 400px;
     filter: brightness(50%);
+    object-position: 100% 0px;
   }
   .cover-profile {
     display: none;
